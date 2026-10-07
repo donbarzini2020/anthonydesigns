@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body class="is-loading">
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <img src="anthonydesigns-cropped.png" alt="" class="loader-logo">
+            <div class="loader-slot">
+                <div class="loader-bar"><div class="loader-bar-fill" id="loaderFill"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <video class="site-bg-video" autoplay muted loop playsinline>
+        <source src="litkeyboard_compressed.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero">
+        <div class="overlay">
+            <img src="anthonydesigns-cropped.png" alt="Anthony Designs" class="hero-logo">
+            <img src="subheading-cropped.png" alt="Creative Developer &amp; Designer" class="hero-subheading">
+        </div>
+        <nav class="nav">
+            <a href="#">About</a>
+            <a href="#">Work</a>
+            <a href="#">Contact</a>
+        </nav>
+        <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
+            <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
+                <polyline points="2,10 8,18 14,10" stroke="rgba(244,238,249,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </div>
+
+    <section class="about" id="about">
+        <div class="about-inner">
+            <span class="about-label">About</span>
+            <h2 class="about-heading">Nice to meet you.</h2>
+            <p class="about-bio">Hi, I'm Anthony. I enjoy designing fast, modern websites with clean layouts, subtle animations, and responsive design. My goal is to create websites that look professional and provide a great experience on every device.</p>
+            <div class="about-divider"></div>
+            <p class="about-stack-label">Technologies I work with</p>
+            <div class="about-icons">
+                <div class="about-icon-wrap">
+                    <i class="devicon-html5-plain colored"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="about-icon-wrap">
+                    <i class="devicon-css3-plain colored"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="about-icon-wrap">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="about-divider" style="margin-top: 52px;"></div>
+            <p class="about-stack-label">Education</p>
+            <div class="about-icons">
+                <div class="about-icon-wrap">
+                    <img src="bclogo.jpg" alt="Broward College" class="about-edu-logo">
+                    <span style="margin-top: 10px; text-align: center;">Broward<br>College</span>
+                </div>
+                <div class="about-icon-wrap">
+                    <img src="spclogo.png" alt="St. Petersburg College" class="about-edu-logo">
+                    <span style="margin-top: 10px; text-align: center;">St. Petersburg<br>College</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="build-section" id="work">
+        <div class="build-inner">
+            <span class="about-label">Process</span>
+            <h2 class="about-heading">Built from scratch.</h2>
+            <p class="about-bio">Every project starts as a blank wireframe and comes to life through deliberate design and clean code.</p>
+        </div>
+        <div class="monitor-wrap">
+            <div class="monitor">
+                <div class="monitor-bezel">
+                    <div class="monitor-screen">
+                        <div class="browser-bar">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-url">anthony.dev</div>
+                            <div class="browser-status" id="buildStatus">wireframe</div>
+                        </div>
+                        <div class="site-wrap">
+                            <div class="mini-site-scaler" id="siteScaler">
+                                <div class="mini-site" id="miniSite">
+                                    <div class="sp-cursor" id="spCursor"></div>
+                                    <nav class="sp-nav">
+                                        <div class="sp-logo"><span>Anthony</span></div>
+                                        <div class="sp-navlinks">
+                                            <span>Home</span><span>Work</span><span>Contact</span>
+                                        </div>
+                                    </nav>
+                                    <div class="sp-hero">
+                                        <div class="sp-hero-left">
+                                            <div class="sp-h1"><span>Design that speaks.</span></div>
+                                            <div class="sp-hsub"><span>Clean. Modern. Responsive.</span></div>
+                                            <div class="sp-hbtn"><span>View Work →</span></div>
+                                        </div>
+                                        <div class="sp-hero-right">
+                                            <div class="sp-globe">
+                                                <img src="globe.jpg" alt="globe" class="sp-globe-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sp-cards">
+                                        <div class="sp-card">
+                                            <div class="sp-cimg sp-cimg-1"><img src="palette.png" alt="Design" class="sp-card-icon"></div>
+                                            <div class="sp-ctitle"><span>Design</span></div>
+                                            <div class="sp-cbody"><span>Pixel-perfect layouts</span></div>
+                                        </div>
+                                        <div class="sp-card">
+                                            <div class="sp-cimg sp-cimg-2"><img src="laptop.png" alt="Develop" class="sp-card-icon"></div>
+                                            <div class="sp-ctitle"><span>Develop</span></div>
+                                            <div class="sp-cbody"><span>Fast, clean code</span></div>
+                                        </div>
+                                        <div class="sp-card">
+                                            <div class="sp-cimg sp-cimg-3"><img src="rocket.png" alt="Launch" class="sp-card-icon"></div>
+                                            <div class="sp-ctitle"><span>Launch</span></div>
+                                            <div class="sp-cbody"><span>Ship with confidence</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="monitor-neck"></div>
+                <div class="monitor-base"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="projects-inner">
+            <div class="projects-head">
+                <span class="about-label">Portfolio</span>
+                <h2 class="about-heading">My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <a href="#" class="project-card">
+                    <div class="project-shot"><img src="paradisecovescreenshot.png" alt="Paradise Cove website screenshot"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">Paradise Cove</h3>
+                        <p class="project-desc">Placeholder description. A short summary of the project goes here: who it was built for, what problem it solves, and what makes the design stand out.</p>
+                        <ul class="project-tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+                        <span class="project-link">View Project →</span>
+                    </div>
+                </a>
+                <a href="#" class="project-card">
+                    <div class="project-shot"><img src="daviescreenshot.png" alt="Davie Golf website screenshot"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">Davie Golf Course</h3>
+                        <p class="project-desc">Placeholder description. A short summary of the project goes here: who it was built for, what problem it solves, and what makes the design stand out.</p>
+                        <ul class="project-tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+                        <span class="project-link">View Project →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    // Loading screen: bar eases toward 90% over the minimum time, completes on window load
+    (function() {
+        const loader = document.getElementById('loader');
+        const fill = document.getElementById('loaderFill');
+        const MIN_MS = 2400;
+        const start = performance.now();
+        let loaded = document.readyState === 'complete';
+        let finished = false;
+
+        function tick() {
+            if (finished) return;
+            const t = Math.min((performance.now() - start) / MIN_MS, 1);
+            const eased = 1 - Math.pow(1 - t, 2);
+            if (loaded && t >= 1) { finish(); return; }
+            fill.style.width = (loaded ? eased * 100 : eased * 90) + '%';
+            requestAnimationFrame(tick);
+        }
+        function finish() {
+            finished = true;
+            fill.style.width = '100%';
+            setTimeout(() => {
+                loader.classList.add('done');
+                document.body.classList.remove('is-loading');
+            }, 350);
+        }
+        window.addEventListener('load', () => { loaded = true; });
+        tick();
+    })();
+    </script>
+
+    <script>
+    document.querySelector('.scroll-hint').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('about').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    </script>
+
+    <script>
+    // Monitor build animation
+    (function() {
+        const site    = document.getElementById('miniSite');
+        const scaler  = document.getElementById('siteScaler');
+        const cursor  = document.getElementById('spCursor');
+        const statusEl = document.getElementById('buildStatus');
+
+        function setScale() {
+            if (!scaler) return;
+            const w = scaler.offsetWidth;
+            const h = scaler.offsetHeight;
+            const scale = Math.min(w / 1200, h / 750);
+            site.style.transform = `scale(${scale})`;
+            site.style.left = ((w - 1200 * scale) / 2) + 'px';
+        }
+        window.addEventListener('resize', setScale);
+        setScale();
+
+        function moveCursor(x, y) {
+            cursor.style.left = x + 'px';
+            cursor.style.top  = y + 'px';
+        }
+        function click() {
+            cursor.classList.add('click');
+            setTimeout(() => cursor.classList.remove('click'), 180);
+        }
+        function built(sel) {
+            document.querySelectorAll('#miniSite ' + sel).forEach(el => el.classList.add('built'));
+        }
+
+        let timers = [];
+        function sched(ms, fn) { timers.push(setTimeout(fn, ms)); }
+        function clearAll() { timers.forEach(clearTimeout); timers = []; }
+
+        function reset() {
+            document.querySelectorAll('#miniSite .built').forEach(el => el.classList.remove('built'));
+            cursor.style.opacity = '0';
+            statusEl.textContent = 'wireframe';
+        }
+
+        function run() {
+            clearAll();
+            reset();
+
+            sched(600,  () => { cursor.style.opacity = '1'; moveCursor(900, 30); });
+            sched(1100, () => { moveCursor(120, 30); click(); });
+            sched(1350, () => { built('.sp-nav'); statusEl.textContent = 'styling nav…'; });
+
+            sched(2200, () => { moveCursor(380, 250); statusEl.textContent = 'building hero…'; });
+            sched(2700, () => { click(); built('.sp-hero'); });
+            sched(3100, () => { built('.sp-h1'); });
+            sched(3550, () => { built('.sp-hsub'); });
+            sched(4000, () => { moveCursor(200, 370); click(); built('.sp-hbtn'); });
+
+            sched(4800, () => { moveCursor(280, 560); statusEl.textContent = 'adding cards…'; });
+            sched(5300, () => { click(); document.querySelector('.sp-cimg-1').classList.add('built'); });
+            sched(5500, () => { document.querySelector('.sp-cimg-2').classList.add('built'); });
+            sched(5700, () => { document.querySelector('.sp-cimg-3').classList.add('built'); });
+            sched(6200, () => { built('.sp-ctitle'); });
+            sched(6700, () => { built('.sp-cbody'); statusEl.textContent = 'complete ✓'; });
+
+
+            sched(11500, run);
+        }
+
+        const section = document.getElementById('work');
+        const obs = new IntersectionObserver(entries => {
+            if (entries[0].isIntersecting) { run(); obs.disconnect(); }
+        }, { threshold: 0.25 });
+        obs.observe(section);
+    })();
+    </script>
+</body>
+</html>
