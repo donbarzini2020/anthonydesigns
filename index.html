@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <script>
+        // Lock hero/loader height to the visible screen at load (phones: avoids 100vh being taller than the screen)
+        (function() {
+            var w = window.innerWidth;
+            function setH() { document.documentElement.style.setProperty('--app-h', window.innerHeight + 'px'); }
+            setH();
+            window.addEventListener('resize', function() { if (window.innerWidth !== w) { w = window.innerWidth; setH(); } });
+        })();
+    </script>
+    <link rel="stylesheet" href="index.css?v=3">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>

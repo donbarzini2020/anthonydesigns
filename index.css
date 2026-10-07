@@ -28,6 +28,7 @@ body {
     z-index: 1;
     min-height: 100vh;
     min-height: 100svh; /* phones: 100vh includes the area behind the address bar, which pushes content down */
+    min-height: var(--app-h, 100svh); /* exact visible height, set by script in index.html */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -582,7 +583,11 @@ body.is-loading { overflow: hidden; }
 
 .loader {
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: var(--app-h, 100svh); /* same height as .hero so the logo sits in the same spot */
     z-index: 1000;
     display: flex;
     flex-direction: column;
